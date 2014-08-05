@@ -1,5 +1,9 @@
 class UserViewController < ApplicationController
+
   def index
-  	@userview = Blog.all
+    @userView = Blog.all
   end
+
+
+
 end

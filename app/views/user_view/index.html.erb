@@ -1,4 +1,10 @@
 
-<p><%= @userview.blog.title %></p>
-<p><%= @userview.blog.author %></p>
-<p><%= @userview.blog.article %></p>
+<div class="cont"> 
+<% @userView.each do |blog| %>
+
+<h3><%= blog.title %></h3>
+<small><%= blog.author %></small>
+<p><%= blog.article %></p>
+
+<% end %>
+</div>
